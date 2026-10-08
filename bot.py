@@ -14,8 +14,8 @@ from telegram.ext import (
 # ==================== CONFIGURATION ====================
 TOKEN = "8632214050:AAERayVRr7OoSi5IQQHJFMjGGzBP-6mhnmI"
 DEFAULT_UPI_ID = "bharatpe.8y011s2n7z76332@fbpe"
-ADMIN_ID = 8884505923
-ADMIN_SUPPORT_USERNAME = "allsupportios"
+ADMIN_ID = 7309568829
+ADMIN_SUPPORT_USERNAME = "@blazebattleindia"
 CUSTOM_QR_PATH = "my_qr.png"
 
 # ==================== CONVERSATION STATES ====================
