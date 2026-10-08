@@ -430,25 +430,25 @@ async def receive_admin_key(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if order_data:
         user_id, product_name, quantity = order_data
         
+        # FIXED: Plain text formatting so multiple links/keys appear naturally in message body with active preview
         if admin_input.startswith("http://") or admin_input.startswith("https://"):
             delivery_msg = (
-                f"🎉 **Your Order #{order_id} is Successfully Approved!**\n\n"
+                f"🎉 Your Order #{order_id} is Successfully Approved!\n\n"
                 f"📦 Product: {product_name} (x{quantity})\n"
                 f"🔗 Your Link / Key:\n{admin_input}\n\n"
                 f"Thank you for shopping with us! ✨"
             )
         else:
             delivery_msg = (
-                f"🎉 **Your Order #{order_id} is Successfully Approved!**\n\n"
+                f"🎉 Your Order #{order_id} is Successfully Approved!\n\n"
                 f"📦 Product: {product_name} (x{quantity})\n"
-                f"🔑 Your Key / Details:\n`{admin_input}`\n\n"
+                f"🔑 Your Key / Details:\n{admin_input}\n\n"
                 f"Thank you for shopping with us! ✨"
             )
 
         await context.bot.send_message(
             chat_id=user_id, 
-            text=delivery_msg, 
-            parse_mode="Markdown",
+            text=delivery_msg,
             disable_web_page_preview=False
         )
         await update.message.reply_text(f"✅ Successfully sent to customer for Order #{order_id}!")
