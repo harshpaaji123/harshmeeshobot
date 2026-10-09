@@ -12,10 +12,10 @@ from telegram.ext import (
 )
 
 # ==================== CONFIGURATION ====================
-TOKEN = "8632214050:AAERayVRr7OoSi5IQQHJFMjGGzBP-6mhnmI"
+TOKEN = "8918239367:AAFtLZ81PHYxiDEbWDcNsORXgSWTm8ZEOsc"
 DEFAULT_UPI_ID = "bharatpe.8y011s2n7z76332@fbpe"
-ADMIN_ID = 7309568829
-ADMIN_SUPPORT_USERNAME = "@blazebattleindia"
+ADMIN_ID = 5816020707
+ADMIN_SUPPORT_USERNAME = "Harshhxx1"
 CUSTOM_QR_PATH = "my_qr.png"
 
 # ==================== CONVERSATION STATES ====================
